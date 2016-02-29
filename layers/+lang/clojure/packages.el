@@ -249,7 +249,7 @@
     (add-hook 'clojure-mode-hook 'clj-refactor-mode)
     :config
     (progn
-      (cljr-add-keybindings-with-prefix "C-c C-f")
+      (cljr-add-keybindings-with-prefix clojure-cljr-prefix)
 
       ;; Usually we do not set keybindings in :config, however this must be done
       ;; here because it reads the variable `cljr--all-helpers'. Since
